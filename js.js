@@ -20,3 +20,5 @@ $(function() {
         $('#star').data('maphilight', data).trigger('alwaysOn.maphilight');
     });
 });
+//
+// http://imagemap-generator.dariodomi.de/

@@ -3,30 +3,65 @@
 <head>
     <meta charset="utf-8">
     <title>MyCompany</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="map.js"></script>
-    <script type="text/javascript" src="js.js"></script>
-
 </head>
 <body>
-<header>
-  <div class="header_logo"><p>mycompany</p></div>
-  <nav>
-    <div class="topnav" id="myTopnav">
-      <a href="">Проекти і галерея</a>
-      <a href="">Послуги і ціни</a>
-      <a href="">Замовити</a>
-      <a href="">Консультації</a>
-      <a href="">Наці клієнти</a>
-      <a href="">Супермаркет реклами</a>
-      <a href="">Штформація про компанію</a>
-      <a href="">Вхід на сайт</a>
-      <a href="" id="menu" class="icon">&#9776;</a>
+<header class="sticky-top fixed-top">
+  <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <img src="img/bgNew.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Company
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Проекти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Послуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Замовити</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Консультації</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Клієнти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Інформація</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Вхід на сайт</a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
 
+
+
+<p><img src="img/bgNew.png" class="map mx-auto d-block" usemap="#uncrn">
+<map name="uncrn">
+    <area id="square2" shape="poly"  coords="326,174,363,194,408,214,439,228,466,197,490,171,517,152,545,130,567,114,594,94,622,78,642,66,667,50,692,38,718,26,743,13,766,5,770,2,743,6,719,11,686,18,659,26,633,32,615,37,590,46,556,58,526,67,486,84,445,104,391,134" href="#" alt="arrow" class="group" data-maphilight='{"groupBy":".group","strokeColor":"009ce1","strokeWidth":2,"fillColor":"009ce1","fillOpacity":1}'>
+    <area id="arrow" shape="poly" style="display:none;" coords="54,1950,92,2091,130,2207,192,2397,248,2546,377,2826,498,3035,574,3163,667,3312,621,3164,587,3059,567,2971,542,2853,512,2655,497,2451,497,2245,499,2166,508,2073,267,2011" href="#" class="group" alt="arrow" data-maphilight='{"groupBy":".group","strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.2}'>
+    <area id="star" shape="poly" coords="78,83,70,100,52,104,64,115,61,133,78,124,94,133,91,116,104,102,87,101,79,88" href="#" alt="star" class="group1" data-maphilight='{"strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}'>
+    <area id="square2" shape="poly"  coords="3,314,1,346,1,373,2,402,4,430,6,454,31,458,70,466,116,482,133,485,139,442,146,412,155,384,162,358,88,334" href="#" alt="arrow" data-maphilight='{"strokeColor":"f5d32b","strokeWidth":2,"fillColor":"f5d32b","fillOpacity":1}'>
+    <area id="square2" shape="poly"  coords="9,477,26,537,42,586,67,652,102,722,145,795,166,826,172,826,157,783,146,739,136,694,129,640,126,586,127,549,129,507" href="#" alt="arrow" data-maphilight='{"strokeColor":"f5d32b","strokeWidth":2,"fillColor":"f5d32b","fillOpacity":1}'>
+    <area id="square2" shape="poly"  coords="77,278,42,269,49,234,58,207,66,184,78,169,89,162,105,159,126,162,150,167,178,175,210,185,250,198,281,208,313,219,336,231,360,239,383,250,405,261,422,269,439,278,457,288,477,298,496,307,514,317,531,325,548,335,561,343,576,354,591,362,603,371,614,380,626,387,640,402,646,409,642,415,629,426,602,442,580,457,556,470,525,488,474,520,446,543,417,564,383,588,367,599,358,597,337,589,311,577,280,561,251,546,229,536,222,536,215,541,210,550,205,566,202,581,199,606,197,626,194,651,192,674,193,694,192,713,194,742,196,766,198,790,199,796,184,797,185,778,181,743,179,722,178,701,177,683,175,660,175,638,175,619,177,599,182,578,184,558,187,540,191,523,194,513,198,506,206,506,218,511,238,518,264,529,286,538,302,546,318,554,335,564,350,570,363,574,374,570,382,566,390,560,404,550,418,539,433,526,449,514,479,494,513,474,536,458,558,444,578,431,593,422,602,413,600,409,597,405,573,389,545,370,517,355,490,340,457,322,422,306,391,289,355,275,319,258,303,250,257,232,214,218,178,207,142,200,116,195,107,197,90,227" href="#" alt="arrow" data-maphilight='{"strokeColor":"d13d8b","strokeWidth":3,"strokeOpacity": 0.5,"fillColor":"d13d8b","fillOpacity":1}'>
+
+    <!-- <area id="square1" shape="poly" coords="326,174,363,194,408,214,439,228,466,197,490,171,517,152,545,130,567,114,594,94,622,78,642,66,667,50,692,38,718,26,743,13,766,5,770,2,743,6,719,11,686,18,659,26,631,36,615,37,590,46,556,58,526,67,486,84,445,104,391,134" href="#" alt="a square" data-maphilight='{"alwaysOn":true,"stroke":false}'> -->
+    <area id="square2" shape="poly" coords="182,795,176,795,171,778,166,759,160,732,154,705,152,683,150,660,147,630,146,599,146,569,149,539,151,514,155,490,160,469,165,451,170,429,175,411,180,395,186,377,190,362,197,346,202,333,210,318,234,328,288,343,346,372,406,406,426,391,448,374,408,352,372,335,336,317,316,306,288,343,256,333,237,328,202,333,218,298,234,271,246,251,259,230,302,250,391,290,474,330,543,370,594,401,605,412,586,430,565,441,550,450,537,458,520,469,502,480,485,491,468,502,456,510,438,523,422,537,397,555,376,570,366,578,357,574,342,569,329,561,310,554,290,545,266,531,241,522,218,511,204,505,196,510,192,521,186,549,183,567,181,586,178,611,176,635,176,658,176,686,181,742,178,742,183,757,185,778" href="#" alt="arrow" class="group" data-maphilight='{ "groupBy":".group","strokeColor":"009ce1","strokeWidth":2,"fillColor":"009ce1","fillOpacity":1}'>
+    <area id="shadowed" shape="rect" coords="250,250,290,290" href="#" alt="Shadow for some" data-maphilight='{"fillColor":"00ff00","shadow":true,"shadowBackground":"ffffff","alwaysOn":true}'>
+</map>
+</p>
 <h1>Assorted features</h1>
 <p>This is an assortment of feature-demonstrations.</p>
 <p>
@@ -39,18 +74,11 @@
     <area id="shadowed" shape="rect" coords="250,250,290,290" href="#" alt="Shadow for some" data-maphilight='{"fillColor":"00ff00","shadow":true,"shadowBackground":"ffffff","alwaysOn":true}'>
 </map>
 </p>
-<p>Features:</p>
-<p><img src="img/bgNew.png"  class="map" usemap="#uncrn">
-<map name="uncrn">
-    <area id="arrow" shape="poly" style="display:none;" coords="16,1288,4,1400,16,1616,36,1792,32,1820,192,1844,380,1896,528,1948,548,1780,580,1660,628,1508,636,1452,352,1376,76,1304" href="#" alt="arrow" data-maphilight='{"strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.2}'>
-    <area id="arrow" shape="poly" style="display:none;" coords="54,1950,92,2091,130,2207,192,2397,248,2546,377,2826,498,3035,574,3163,667,3312,621,3164,587,3059,567,2971,542,2853,512,2655,497,2451,497,2245,499,2166,508,2073,267,2011" href="#" alt="arrow" data-maphilight='{"strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.2}'>
-    <area id="star" shape="poly" coords="78,83,70,100,52,104,64,115,61,133,78,124,94,133,91,116,104,102,87,101,79,88" href="#" alt="star" class="group" data-maphilight='{"strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}'>
-    <area id="square1" shape="poly" coords="248,126,222,150,202,122,233,105,239,118,249,125,250,128" href="#" alt="a square" data-maphilight='{"alwaysOn":true,"stroke":false}'>
-    <area id="square2" shape="poly" coords="151,249,175,225,182,222,167,193,136,221,153,250" href="#" alt="another square" class="group" data-maphilight='{"groupBy":".group"}'>
-    <area id="shadowed" shape="rect" coords="250,250,290,290" href="#" alt="Shadow for some" data-maphilight='{"fillColor":"00ff00","shadow":true,"shadowBackground":"ffffff","alwaysOn":true}'>
-</map>
-</p>
 <small>The image is <a href="http://www.openclipart.org/detail/3325">Ruffled Map by midkiffaries</a></small><br/>
 <a href="./">Back to the index</a>
+
+<script type="text/javascript" src="js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
