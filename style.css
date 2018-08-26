@@ -1,163 +1,135 @@
-<<<<<<< HEAD
-/* *{
-  margin: 0;
-  padding: 0;
-}
-a{
-  text-decoration: none;
-}
-li{
-  list-style: none;
-}
-body{
-  font-family: 'Open Sans', sans-serif;
-}
-header{
-  width: 100%;
-  background: #000;
-  display: flex;
-}
-.header_logo{
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 800;
-  font-size: 24px;
-  cursor: pointer;
-  margin-top: 56px;
-  margin-left: 2%;
-}
-nav{
-  margin-top: 56px;
-  margin-left: 2%;
-}
-.topnav a{
-  color: #fff;
-  text-align: center;
-  padding: 12px 16px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.topnav a:hover{
-  border-bottom: 3px solid #fcac45;
-}
-.topnav .icon{
-  display: none;
-}
-@media screen and (max-width: 1062px) {
-  .topnav a{
-    display: none;
-  }
-  .topnav a.icon{
-    float: right;
-    margin-top: -17px;
-    display: block;
-    color: #fff;
-    font-size: 25px;
-  }
-  nav{
-    width: 100%;
-  }
-  .topnav.responsive{
-    position: relative;
-    top: 50px;
-    left: -200px;
-  }
-  header .topnav.responsive{
-    height: 500px;
-  }
-  .topnav.responsive a.icon{
-    position: absolute;
-    top: -50px;
-    right: -200px;
-  }
-  .topnav.responsive a.icon{
-    float: none;
-    display: block;
-    text-align: left;
-  }
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900);
+
+/* body,html{
+  background-color:#ffffff;
+  text-align:center;
 } */
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-html {height: 100%;}
-body {
-	height: 100%;
-	font: 14px/24px Arial, Tahoma, sans-serif;
-	background-color: #ebebeb;
-}
-ol, ul {list-style: none;}
-* {
-	margin: 0;
-	padding: 0;
-	outline: none;
 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+p2{
+  color:#EEEEEE;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  font-weight: 100;
+  font-size: 30px;
+  position:relative;
+  top:20px;
 }
-
-a, a:hover {text-decoration: none;}
-.clearfix:after{
-  content:  " ";
-  display: table;
+p3{
+  color:#EEEEEE;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  font-weight: 100;
+  font-size: 30px;
+  position:relative;
+  top:80px;
 }
-.clearfix:after{
-  clear: both;
-}
-.left{
-  float: left;
-}
-.right{
-  float: right;
-}
-.text-right{
-  text-align: right;
-}
-.container{
-  max-width: 960px;
-  margin: 0 auto;
+p4{
+  color:#EEEEEE;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+  font-weight: 100;
+  font-size: 30px;
+  position:relative;
+  top:150px;
 }
 
+p5{
+  position:relative;
+  top:140px;
+  left:10px;
+}
+<!-- /* Bild-1/ Image-1 */-->
+#image_01{
+  background-image: url("https://ununsplash.imgix.net/photo-1422022098106-b3a9edc463af?fit=crop&fm=jpg&h=700&q=75&w=1050");
+  background-size:470px;
+  width:450px;
+  height:310px;
+  margin:auto;
+  text-align:center;
+  transition: all 0.4s;
+  position: relative;
+  top:40px;
+}
+<!-- /* Hier kannst du das Bild an sich beim Drüberfahren ändern-->
+#image_01:hover{
+  opacity:1.0;
+  background-size:530px;
+}
+<!-- /* Hier kannst du entscheiden wie weiß das Bild beim Drüberfahren wird */-->
+#image_01:hover #image_01_hover03{
+  opacity:0.2;
+}
+<!-- /* Hier kommt das "THE" eingeflogen */-->
+#image_01:hover #image_01_hover{
+  opacity:1.0;
+   top:120px;
+  left:-40px;
+}
+<!-- /* Hier kommt das "LEAF" eingeflogen */-->
+#image_01:hover #image_01_hover02{
+top:66px;
+  left:40px;
+  opacity: 1.0;
+}
+<!-- /* Position von Text "THE" und "CAR" */-->
+p1{
+  position: relative;
+  top:5px;
+  left:5px;
+}
+<!-- /* Position,Schriftart,Schriftgröße usw. von "THE" vor dem Drüberfahren über "#image_01" */-->
+#image_01_hover{
+  width:77px;
+  height: 50px;
+  background-color:transparent;
+  border-left:2px solid #fff;
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+  border-right:0px solid #fff;
+  position: relative;
+  top:120px;
+  left:-170px;
+  margin:auto;
+  opacity: 0.0;
+  transition: all 0.4s;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  font-size:35px;
+  font-weight:200;
+  text-align:center;
+}
 
-.nav, #touch-menu{
-  background: #3e4156;
+<!-- /* Position,Schriftart,Schriftgröße usw. von "LEAF" vor dem Drüberfahren über "#image_01" */-->
+#image_01_hover02{
+  width:170px;
+  height: 50px;
+  background-color:transparent;
+  border-left:0px solid #fff;
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff;
+  position: relative;
+  top:66px;
+  left:160px;
+  margin:auto;
+  opacity: 0.0;
+  transition: all 0.4s;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  font-size:35px;
+  font-weight:200;
+  text-align:center;
 }
-.nav li{
-  float: left;
+
+<!-- /* Hier kannst du die Farbe wählen, die erst sichtbar beim Drüberfahren des Bildes wird */-->
+#image_01_hover03{
+  background-color:#fff;
+  width:450px;
+  height:310px;
+  margin:auto;
+  text-align:center;
+  transition: all 0.4s;
+  position: relative;
+  top:-108px;
+  opacity:0.0;
 }
-.nav li a, #touch-menu{
-  display: block;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
-}
-.nav li a:hover, #touch-menu:hover{
-  background: #515572;
-}
-#touch-menu{
-	display: none;
-}
-@media  (max-width: 768px) {
-	.nav {display: none;}
-	.nav li{float: none;}
-	.nav li a {
-		color: #666;
-		border-bottom: 1px solid #eee;
-		border-left: 3px solid transparent;
-		background: #fff;
-	}
-	.nav li a:hover{
-		color: #333;
-		background: #f0f0f0;
-		border-left: 3px solid #515572;
-	}
-	#touch-menu{display: block;}
-}
-=======
->>>>>>> df14aa8623bd604e3c2e01da59a5b822f5c63bb4
