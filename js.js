@@ -1,22 +1,47 @@
 $(function() {
-    $('.map').maphilight({
-        fillColor: '008800'
+  $(".map").maphilight({
+    fillColor: "008800"
+  });
+  $(".clients")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Наші Клієнти</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
     });
-    $('#hilightlink').mouseover(function(e) {
-        $('#square2').mouseover();
-    }).mouseout(function(e) {
-        $('#square2').mouseout();
-    }).click(function(e) { e.preventDefault(); });
-    $('#starlink').click(function(e) {
-        e.preventDefault();
-        var data = $('#star').data('maphilight') || {};
-        data.neverOn = !data.neverOn;
-        $('#star').data('maphilight', data);
+  $(".services")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Послуги</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
     });
-    $('#star,#starlink2').click(function(e) {
-        e.preventDefault();
-        var data = $('#star').mouseout().data('maphilight') || {};
-        data.alwaysOn = !data.alwaysOn;
-        $('#star').data('maphilight', data).trigger('alwaysOn.maphilight');
+  $(".consultations")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Консультації</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
+    });
+  $(".inform")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Інформація</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
+    });
+  $(".order")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Замовити</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
+    });
+  $(".projekt")
+    .mouseover(function(e) {
+      $("div.fildname").html("<span class='mapName'>Проекти</span>");
+    })
+    .mouseout(function(e) {
+      $(".fildname").html('<br style="line-height: 11px;">');
     });
 });
