@@ -14,5 +14,25 @@ body {
   height: auto;
 
 }
+.back-top {
+display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #7376df;
+  opacity: 0.7;
+  border-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.back-top:hover {
+  background-color: #307bc9;
+  opacity: 1;
+}
 font-family: 'Pacifico', cursive;
 font-family: 'Lobster', cursive;
